@@ -1,5 +1,5 @@
 // Import perfumes array
-import { perfumes } from "/JS Files/perfumes.js";
+import { perfumes } from "../JS Files/perfumes.js";
 // Check if user is logged in
 const loggedInUser = localStorage.getItem('loggedInUser');
 let userCart;
@@ -23,7 +23,7 @@ const getProductByName = (encodedName) => {
 const updatePageContent = (product) => {
   if (!product) {
     alert("Product not found!");
-    window.location.href = "perfumeShop.html"; // Redirect if product not found
+    window.location.href = "../HTML Files/perfumeShop.html"; // Redirect if product not found
     return;
   }
 
@@ -33,7 +33,7 @@ const updatePageContent = (product) => {
   document.querySelector("h2").textContent = product.companyName;
   document.getElementById("overall-rating").textContent = product.overallRating + "/5";
   document.getElementById("description").textContent = product.description;
-  document.getElementById("review-link").href = `perfumeReviews.html?name=${encodeURIComponent(product.productName)}`;
+  document.getElementById("review-link").href = `../HTML Files/perfumeReviews.html?name=${encodeURIComponent(product.productName)}`;
 
   // Dynamically update product image
   document.querySelector(".left").style.backgroundImage = `url(${product.images.main})`;
@@ -47,7 +47,7 @@ const initializePage = () => {
   const encodedName = getEncodedName();
   if (!encodedName) {
     alert("Invalid product link!");
-    window.location.href = "perfumeShop.html"; // Redirect if no name provided
+    window.location.href = "../HTML Files/perfumeShop.html"; // Redirect if no name provided
     return;
   }
 
@@ -127,9 +127,9 @@ window.buyNow = function() {
   if (loggedInUser) {
     userCart.push({"productName":getEncodedName(),"type":"Perfume","quantity":quantity});
     localStorage.setItem('loggedInUserCart', JSON.stringify(userCart));
-    window.location.href = "cart.html"
+    window.location.href = "../HTML Files/cart.html"
   } else {
-    window.location.href = "login.html";
+    window.location.href = "../HTML Files/login.html";
   }
 }
 
@@ -138,7 +138,7 @@ window.addToCart = function() {
     userCart.push({"productName":getEncodedName(),"type":"Perfume","quantity":quantity});
     localStorage.setItem('loggedInUserCart', JSON.stringify(userCart));
   } else {
-    window.location.href = "login.html";
+    window.location.href = "../HTML Files/login.html";
   }
 }
 

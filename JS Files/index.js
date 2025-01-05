@@ -11,17 +11,17 @@ hamburgerMenu.addEventListener("click", () => {
 
 // Function to redirect to perfume shop page
 window.redirectToPerfumeShop = function() {
-  window.location.href = "/HTML Files/perfumeShop.html";
+  window.location.href = "../HTML Files/perfumeShop.html";
 }
 // Function to redirect to thawb shop page
 window.redirectToThawbShop = function() {
-  window.location.href = "/HTML Files/thawbShop.html";
+  window.location.href = "../HTML Files/thawbShop.html";
 }
 
 
 //Trending perfumes and home page reviews handler
 
-import { perfumes } from '/JS Files/perfumes.js';
+import { perfumes } from '../JS Files/perfumes.js';
 
 // Function to shuffle and pick random perfumes
 function getRandomPerfumes(perfumeArray, count) {
@@ -46,8 +46,8 @@ randomPerfumes.forEach((perfume) => {
   reviewItem.id = `${perfume.productName}`;
 
   const encodedName = encodeURIComponent(perfume.productName);
-  let productLink = `/HTML Files/perfumeProductPage.html?name=${encodedName}`;
-  let reviewLink = `/HTML Files/perfumeReviews.html?name=${encodedName}`;
+  let productLink = `../HTML Files/perfumeProductPage.html?name=${encodedName}`;
+  let reviewLink = `../HTML Files/perfumeReviews.html?name=${encodedName}`;
   
   perfumeItem.innerHTML = `
     <a href="${productLink}">

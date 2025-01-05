@@ -1,5 +1,5 @@
-import { perfumes } from "/JS Files/perfumes.js";
-import { thawbs } from "/JS Files/thawbs.js";
+import { perfumes } from "../JS Files/perfumes.js";
+import { thawbs } from "../JS Files/thawbs.js";
 
 const productContainer = document.querySelector(".cart-details");
 

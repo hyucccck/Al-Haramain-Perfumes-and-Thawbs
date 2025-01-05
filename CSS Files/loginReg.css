@@ -17,11 +17,11 @@ body {
 }
 
 .container[data-page="login"] .left {
-  background-image: url(/assets/loginBG.png);
+  background-image: url(../assets/loginBG.png);
 }
 
 .container[data-page="register"] .left {
-  background-image: url(/assets/registerBG.png);
+  background-image: url(../assets/registerBG.png);
 }
 
 .right {

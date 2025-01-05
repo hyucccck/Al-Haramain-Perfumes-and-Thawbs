@@ -1,5 +1,5 @@
 // Import perfumes array
-import { perfumes } from "/JS Files/perfumes.js";
+import { perfumes } from "../JS Files/perfumes.js";
 
 // Function to parse URL and get encodedName
 const getEncodedName = () => {

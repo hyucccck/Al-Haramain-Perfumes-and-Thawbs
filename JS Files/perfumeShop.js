@@ -1,4 +1,4 @@
-import { perfumes } from '/JS Files/perfumes.js';
+import { perfumes } from '../JS Files/perfumes.js';
 
 // Select elements
 const searchBar = document.getElementById("search-bar");
@@ -22,7 +22,7 @@ window.displayProducts = function(filteredProducts) {
 
     productDiv.addEventListener("click", () => {
       const encodedName = encodeURIComponent(perfume.productName);
-      window.location.href = `perfumeProductPage.html?name=${encodedName}`;
+      window.location.href = `../HTML Files/perfumeProductPage.html?name=${encodedName}`;
     });
 
     productGrid.appendChild(productDiv);

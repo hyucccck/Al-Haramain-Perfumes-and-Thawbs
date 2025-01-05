@@ -1,4 +1,4 @@
-import { users } from '/JS Files/users.js';
+import { users } from '../JS Files/users.js';
 
 if (!localStorage.getItem('users')) {
   localStorage.setItem('users', JSON.stringify(users));
@@ -29,7 +29,7 @@ window.handleLogin = function () {
     const userCart = user ? user.cart : null;
     localStorage.setItem("loggedInUserCart", JSON.stringify(userCart)); // Store the logged-in user's cart
     
-    window.location.href = "/index.html"; // Redirect to homepage
+    window.location.href = "../index.html"; // Redirect to homepage
   } else {
     // Failed login
     errorMessage.textContent = "Invalid email or password. Please try again.";
@@ -70,15 +70,15 @@ window.handleRegister = function() {
 
   localStorage.setItem('users', JSON.stringify(users));
   
-  window.location.href = "login.html";
+  window.location.href = "../HTML Files/login.html";
 }
 
 // Function to redirect to login page
 window.redirectToLogin = function() {
-  window.location.href = "/HTML Files/login.html";
+  window.location.href = "../HTML Files/login.html";
 }
 
 // Function to redirect to register page
 window.redirectToRegister = function() {
-  window.location.href = "/HTML Files/register.html";
+  window.location.href = "../HTML Files/register.html";
 }

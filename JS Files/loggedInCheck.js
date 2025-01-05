@@ -5,7 +5,7 @@ const authLinks = document.getElementById('auth-links');
 if (loggedInUser) {
   // If user is logged in, change links to "Cart" and "Sign Out"
   authLinks.innerHTML = `
-    <a href="/HTML Files/cart.html">Cart</a>
+    <a href="../HTML Files/cart.html">Cart</a>
     <p>§</p>
     <a href="#" id="sign-out">Sign Out</a>
   `;
@@ -17,6 +17,6 @@ if (loggedInUser) {
     localStorage.removeItem('loggedInUserCart');
     
     // Redirect to index.html as if not logged in
-    window.location.href = '/index.html';
+    window.location.href = '../index.html';
   });
 }

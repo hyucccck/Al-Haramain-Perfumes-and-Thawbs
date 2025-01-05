@@ -9,11 +9,11 @@
 }
 
 .container[data-page="aboutUs"] .left {
-  background-image: url('/assets/aboutUsBG.png');
+  background-image: url('../assets/aboutUsBG.png');
 }
 
 .container[data-page="contactUs"] .left {
-  background-image: url('/assets/contactUsBG.png');
+  background-image: url('../assets/contactUsBG.png');
 }
 
 .right {

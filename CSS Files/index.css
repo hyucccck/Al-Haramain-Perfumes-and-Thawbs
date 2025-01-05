@@ -1,7 +1,7 @@
 /* Main Image Section */
 .main-img {
-  background: url('/assets/mainImg.png') no-repeat center center/cover;
-  background-image: url(/assets/mainImg.png);
+  background: url('../assets/mainImg.png') no-repeat center center/cover;
+  background-image: url(../assets/mainImg.png);
   height: 50rem;
   display: flex;
   width: 100%;
@@ -115,7 +115,7 @@
 }
 
 .perfumeBox {
-  background-image: url('/assets/perfumePic.png');
+  background-image: url('../assets/perfumePic.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,7 +125,7 @@
 }
 
 .thawbsBox {
-  background-image: url('/assets/thawbPic.png');
+  background-image: url('../assets/thawbPic.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

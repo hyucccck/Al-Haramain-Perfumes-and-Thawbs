@@ -1,4 +1,4 @@
-import { thawbs } from '/JS Files/thawbs.js';
+import { thawbs } from '../JS Files/thawbs.js';
 
 // Select elements
 const searchBar = document.getElementById("search-bar");
@@ -19,10 +19,10 @@ window.displayProducts = function(filteredProducts) {
         <span class="price">RM${thawb.price.small.toFixed(2)}</span>
       </div>
     `;
-
+    
     productDiv.addEventListener("click", () => {
       const encodedName = encodeURIComponent(thawb.productName);
-      window.location.href = `thawbProductPage.html?name=${encodedName}`;
+      window.location.href = `../HTML Files/thawbProductPage.html?name=${encodedName}`;
     });
 
     productGrid.appendChild(productDiv);

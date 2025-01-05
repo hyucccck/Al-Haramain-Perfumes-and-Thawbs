@@ -1,5 +1,5 @@
 // Import perfumes array
-import { thawbs } from "/JS Files/thawbs.js";
+import { thawbs } from "../JS Files/thawbs.js";
 
 // Function to parse URL and get encodedName
 const getEncodedName = () => {
