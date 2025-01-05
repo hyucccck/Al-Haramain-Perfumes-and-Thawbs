@@ -1,0 +1,75 @@
+.product-thumbnail {
+  background-color: white;
+  width: 18rem;
+  height: 1%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease; /* Smooth transition for glow and scale */
+}
+
+.product-thumbnail:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  cursor: pointer;
+}
+
+.product-thumbnail img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.product-info {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.product-info .name {
+  font-weight: bold;
+}
+
+.product-info .price {
+  color: #382618;
+}
+
+#search-section {
+  text-align: center;
+  width: 100%;
+}
+
+#search-bar {
+  width: 80%; 
+  padding: 10px; 
+  font-size: 16px; 
+  font-size: 1rem; 
+  font-family: 'Inknut Antiqua', serif; 
+  padding: 0.1rem 2rem; 
+  margin: 1.5rem 0; 
+  background-color: white; 
+  color: #382618; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5rem; 
+  border: none;
+}
+
+#product-grid {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 3rem 3rem; 
+  padding: 1rem 2rem 3rem 2rem; 
+  min-height: 20rem;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  #product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

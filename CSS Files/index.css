@@ -1,0 +1,184 @@
+/* Main Image Section */
+.main-img {
+  background: url('/assets/mainImg.png') no-repeat center center/cover;
+  background-image: url(/assets/mainImg.png);
+  height: 50rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-img-logo {
+  height: 30rem;
+}
+
+.main-img-text {
+  font-size: 3rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+#perfume-display, #review-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  max-width: 100%;
+  width: 80%;
+}
+
+.review-item {
+  background-color: #382618;
+}
+
+.review-item p {
+  font-size: 5rem;
+}
+
+#perfume-display a, #review-display a{
+  text-decoration: none;
+  color: white;
+}
+
+.perfume-item, .review-item {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+  width: calc(30% - 1rem);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.perfume-item:hover, .review-item:hover {
+  transform: scale(1.05);
+}
+
+.perfume-item img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.perfume-item p {
+  margin-top: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #382618;
+}
+
+/* Products Section */
+#products {
+  background-color: #382618;
+  width: 100%;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#productsHeading {
+  color: white;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 80%;
+}
+
+.product-link {
+  font-family: 'Inknut Antiqua', serif;
+  text-decoration: none;
+  width: 60rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; 
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product-link:hover {
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+}
+
+.perfumeBox {
+  background-image: url('/assets/perfumePic.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 1);
+  font-size: 3rem;
+}
+
+.thawbsBox {
+  background-image: url('/assets/thawbPic.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 1); 
+  font-size: 3rem;
+}
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .main-img {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .main-img-logo {
+    height: 15rem;
+  }
+
+  .main-img-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .products-section {
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100%;
+  }
+
+  .product-link {
+    width: 80%;
+    height: 15rem;
+  }
+
+  .perfumeBox, .thawbsBox {
+    font-size: 2rem;
+  }
+
+  #perfume-display, #review-display {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .perfume-item, .review-item {
+    width: 80%;
+  }
+}

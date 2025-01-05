@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  flex: 2;
+  background: no-repeat center center/cover;
+}
+
+.container[data-page="aboutUs"] .left {
+  background-image: url('/assets/aboutUsBG.png');
+}
+
+.container[data-page="contactUs"] .left {
+  background-image: url('/assets/contactUsBG.png');
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #382618;
+  box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.aboutUs, .contactUs {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.aboutUs h1, .contactUs h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.aboutUs h2, .contactUs label {
+  font-size: 1.7rem;
+  line-height: 5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.aboutUs input, .contactUs input {
+  font-size: 1rem;
+  width: 20rem;
+  font-family: 'Inknut Antiqua', serif;
+  padding: 0.1rem 2rem;
+  margin: 0 0 1.5rem 0;
+  background-color: #E2CDBE;
+  color: #382618;
+  border-radius: 5rem;
+  border: none;
+}
+
+.contactUs textarea {
+  font-size: 1rem;
+  width: 20rem;
+  font-family: 'Inknut Antiqua', serif;
+  padding: 0.1rem 2rem;
+  margin: 0 0 1.5rem 0;
+  background-color: #E2CDBE;
+  color: #382618;
+  border-radius: 2rem;
+  border: none;
+  resize: none;
+}
+
+.aboutUs button, .contactUs button {
+  font-size: 1rem;
+  font-family: 'Inknut Antiqua', serif;
+  padding: 0.1rem 2rem;
+  background-color: #382618;
+  color: white;
+  border: 0.2rem solid white;
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.3s;
+}
+
+.aboutUs button:hover, .contactUs button:hover {
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.5);
+}
+
+.aboutUs p {
+  margin: 15px 0;
+  color: #E2CDBE;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .left {
+      display: none;
+  }
+  .right {
+      flex: 1;
+      padding: 2rem;
+  }
+}

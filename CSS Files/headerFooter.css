@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Inknut Antiqua', serif;
+  line-height: 1.5;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+#main-header {
+  background-color: #382618;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  position: relative;
+}
+
+#main-header .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#main-header .logo {
+  width: 5rem;
+}
+
+#main-header .logo-text .title,
+#main-header .logo-text .subtitle {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+
+#main-header .logo-text .title {
+  font-size: 1.5rem;
+}
+
+#main-header .logo-text .subtitle {
+  font-size: 1rem;
+}
+
+#main-header .nav-links,
+#main-header .auth-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#main-header a, p {
+  color: white;
+  text-decoration: none;
+}
+
+#main-header a:hover {
+  color: white;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Footer Styles */
+#main-footer {
+  background-color: #382618;
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#main-footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#main-footer .footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 2rem;
+}
+
+#main-footer .footer-title {
+  font-size: 2.3rem;
+  color: white;
+  margin: 0;
+}
+
+#main-footer .footer-subtitle {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+
+#main-footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+#main-footer .footer-links a:hover {
+  color: white;
+}
+
+/* Logo Styles */
+#main-footer .footer-logo-container {
+  margin-left: auto;
+}
+
+#main-footer .footer-logo {
+  height: 15rem;
+  width: auto;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  /* Stack header content vertically on small screens */
+  #main-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  #main-header .logo-container {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #main-header .logo {
+    width: 4rem;
+  }
+
+  #main-header .logo-text .title {
+    font-size: 1.3rem;
+  }
+
+  #main-header .logo-text .subtitle {
+    font-size: 0.8rem;
+  }
+
+  /* Hide nav and auth links on mobile by default */
+  #main-header .nav-links,
+  #main-header .auth-links {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0rem;
+  }
+
+  /* Show hamburger menu icon on mobile */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Show links when active */
+  #main-header .nav-links.active,
+  #main-header .auth-links.active {
+    display: flex;
+  }
+
+  /* Footer */
+  #main-footer {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+
+  #main-footer .footer-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  #main-footer .footer-logo-container {
+    margin-left: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #main-footer .footer-logo {
+    height: 10rem;
+  }
+
+  #main-footer .footer-links {
+    margin-top: 1rem;
+  }
+}

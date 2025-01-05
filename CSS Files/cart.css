@@ -1,0 +1,158 @@
+.container {
+  min-height: 50rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 3rem;
+  background-color: #382618;
+  box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-details h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.cart-product {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  margin: 2rem;
+  border: 0.2rem solid white;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.product-details h2 {
+  font-size: 3rem;
+  line-height: 100%;
+  margin: 0;
+  color: white;
+}
+.product-details h3 {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 100%;
+  color: white;
+}
+
+.cart-product h2 {
+  font-size: 3rem;
+  line-height: 100%;
+  margin: 0;
+  color: white;
+}
+.cart-product h3 {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 100%;
+  color: white;
+}
+
+.remove-item {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  line-height: 0;
+  border-radius: 3rem;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+#checkout {
+  font-size: 1rem;
+  font-family: 'Inknut Antiqua', serif;
+  padding: 0.1rem 2rem;
+  background-color: #E2CDBE;
+  box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.3);
+  color: #382618;
+  border: 0.2rem solid white;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+#checkout:hover {
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.5);
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Mobile view responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .cart-details h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .cart-product {
+    flex-direction: column;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .product-details {
+    text-align: center;
+  }
+
+  .product-details h2,
+  .product-details h3,
+  .cart-product h2,
+  .cart-product h3 {
+    font-size: 2rem;
+  }
+
+  .remove-item {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    align-self: center;
+    margin-top: 1rem;
+  }
+}

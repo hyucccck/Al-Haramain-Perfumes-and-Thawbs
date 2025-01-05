@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Al Haramain Perfumes & Thawbs</title>
+    <link rel="icon" type="image/x-icon" href="/assets/webTechProjLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS Files/loginReg.css">
+</head>
+<body>
+    <div class="container" data-page="login">
+        <div class="left"></div>
+        <div class="right">
+            <div class="login-form">
+                <img src="/assets/webTechProjLogo.png" alt="Logo" width="100rem">
+                <h1>Login</h1>
+                <input id="email" type="email" placeholder="Email" required>
+                <input id="password" type="password" placeholder="Password" required>
+                <button onclick="handleLogin()">Login</button>
+                <p id="error-message" class="error"></p>
+                <p>No account?</p>
+                <p>Don't worry, create an account now!</p>
+                <button class="register-button" onclick="redirectToRegister()">Register</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/JS Files/loginReg.js"></script>
+</body>
+</html>
